@@ -92,7 +92,7 @@ open class BlockButton: UIButton {
         highlightLayer.frame = layer.bounds
         highlightLayer.backgroundColor = UIColor.black.cgColor
         highlightLayer.opacity = 0.5
-        var maskImage: UIImage? = nil
+        var maskImage: UIImage?
         UIGraphicsBeginImageContextWithOptions(layer.bounds.size, false, 0)
         if let context = UIGraphicsGetCurrentContext() {
             layer.render(in: context)
